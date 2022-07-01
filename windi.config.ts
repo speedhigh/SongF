@@ -6,4 +6,14 @@ export default defineConfig({
    * @see https://windicss.org/features/attributify.html
    */
   attributify: true,
+  theme: {
+    extend: {
+      colors: {
+        primary: '#FF432A'
+      },
+    },
+  },
+  plugins: [
+    require('windicss/plugin/line-clamp'),
+  ]
 })
