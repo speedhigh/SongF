@@ -48,7 +48,7 @@
     <Nuxt />
 
     <!-- FOOTER -->
-    <footer :class="$nuxt.$route.path === '/login' ? 'h-44' : 'h-[27.75rem]'">
+    <footer :class="$nuxt.$route.path === '/login' ? 'h-[178px]' : 'h-[27.75rem]'">
       <!-- menu -->
       <div
         v-if="$nuxt.$route.path !== '/login'"
@@ -60,8 +60,8 @@
         </div>
         <div class="flex-grow w-full flex justify-between">
           <!-- 活动专区 -->
-          <div 
-            v-for="(item, index) in footerMenu" 
+          <div
+            v-for="(item, index) in footerMenu"
             :key="index"
           >
             <h3>{{ item.title }}</h3>
@@ -188,7 +188,7 @@ export default {
 
 <style>
 header {
-  @apply fixed top-0 inset-x-0 w-full h-[3.75rem] bg-white z-[1000] shadow-md flex items-center px-[3.75rem] text-sm
+  @apply fixed top-0 inset-x-0 w-full h-[3.75rem] bg-white shadow-md flex items-center px-[3.75rem] text-sm z-50
 }
 .header-nav {
   @apply cursor-pointer hover:text-primary py-3 px-2 mr-3.5
@@ -202,6 +202,13 @@ header {
 footer {
   @apply absolute bottom-0 inset-x-0 w-full bg-gray-100
 }
+
+/* scrollbar */
+* { @apply m-0 p-0 }
+html { overflow-y: overlay }
+
+::-webkit-scrollbar { @apply w-2}
+::-webkit-scrollbar-thumb { @apply bg-gray-300 w-2 rounded-lg }
 
 /* 全局样式 */
 input, button, select, textarea { outline: none !important }
