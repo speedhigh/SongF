@@ -1,6 +1,7 @@
 <template>
-  <div class="text-[rgba(0,0,122,0.2)] text-[10rem]">
+  <div class="text-[10rem] text-gray-900">
     退退退退
+    <el-button type="primary">按钮</el-button>
   </div>
 </template>
 
