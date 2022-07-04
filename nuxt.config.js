@@ -37,6 +37,10 @@ export default {
     baseUrl:process.env.NUXT_ENV_BASE_URL,
   },
 
+  loading: {
+    color: '#FF432A',
+    height: '2px'
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
