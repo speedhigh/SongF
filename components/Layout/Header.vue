@@ -4,27 +4,16 @@
       <img src="~/assets/logo.png" alt="logo" width="112" height="40">
     </nuxt-link>
     <!-- left header-nav -->
-    <!-- 首页 -->
     <nuxt-link 
-      to="/"
+      :to="item.path"
+      v-for="item in navList"
+      :key="item.id"
       class="header-nav"
-      :class="{ 'text-primary' : $nuxt.$route.path === '/' }"
+      :class="{ 'text-primary' : $nuxt.$route.path === item.path }"
     >
-      首页
+      {{ item.title }}
     </nuxt-link>
-    <!-- 活动专区 -->
-    <div class="header-nav">活动专区</div>
-    <!-- 在线医生 -->
-    <div class="header-nav">在线医生</div>
-    <!-- 在线商城 -->
-    <div class="header-nav">在线商城</div>
-    <!-- 最新资讯 -->
-    <div class="header-nav">最新资讯</div>
-    <!-- 签证办理 -->
-    <div class="header-nav">签证办理</div>
-    <!-- 身元保证 -->
-    <div class="header-nav">身元保证</div>
-    <!-- right header-nav -->
+
     <!-- 关注我们 -->
     <div class="ml-auto header-nav">关注我们</div>
     <!-- 联系我们 -->
@@ -51,7 +40,19 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      navList: [
+        { id: '1', title: '首页', path: '/' },
+        { id: '2', title: '活动专区', path: '/active' },
+        { id: '3', title: '在线医生', path: '/doctor' },
+        { id: '4', title: '在线商城', path: '/shop' },
+        { id: '5', title: '最新资讯', path: '/info' },
+        { id: '6', title: '签证办理', path: '/visa' },
+        { id: '7', title: '身元保证', path: '/guarantee' },
+      ]
+    }
+  }
 }
 </script>
 

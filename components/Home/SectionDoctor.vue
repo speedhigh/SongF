@@ -14,7 +14,7 @@
           <button 
             v-for="i in 11" 
             :key="i" 
-            class="w-[6.25rem] h-9 border rounded-md text-gray-600 text-sm hover:(bg-primary text-white border-none)"
+            class="w-[6.25rem] h-9 shadow rounded-md text-gray-600 text-sm hover:(bg-primary text-white shadow-md shadow-primary/50)"
           >
             xxxxx
           </button>
@@ -28,7 +28,7 @@
           <button 
             v-for="i in 11" 
             :key="i" 
-            class="w-[6.25rem] h-9 border rounded-md text-gray-600 text-sm hover:(bg-primary text-white)"
+            class="w-[6.25rem] h-9 shadow rounded-md text-gray-600 text-sm hover:(bg-primary text-white shadow-md shadow-primary/50)"
           >
             xxxxx
           </button>
@@ -65,8 +65,16 @@
           接诊量<span class="text-gray-600 ml-1">6630</span>
         </p>
         <div class="mt-4 flex space-x-5">
-          <button class="w-[7.5rem] h-9 border border-primary rounded-3xl text-base text-primary hover:(bg-primary text-white)">图文咨询</button>
-          <button class="w-[7.5rem] h-9 border border-primary rounded-3xl text-base text-primary hover:(bg-primary text-white)">视频咨询</button>
+          <button 
+            class="w-[7.5rem] h-9 border border-primary rounded-3xl text-base text-primary hover:(bg-primary text-white shadow-md shadow-primary/50)"
+          >
+            图文咨询
+          </button>
+          <button 
+            class="w-[7.5rem] h-9 border border-primary shadow rounded-3xl text-base text-primary hover:(bg-primary text-white shadow-md shadow-primary/50)"
+          >
+            视频咨询
+          </button>
         </div>
       </div>
     </div>

@@ -7,12 +7,12 @@
     <!-- search -->
     <div class="relative -mt-[30px]">
       <div class="w-[45rem] h-[3.75rem] mx-auto rounded-md bg-white shadow-lg flex items-center">
-        <div class="flex-grow w-full px-6">
-          <input type="text" placeholder="搜索医生、药品、医疗器材、体检套餐、资讯等" class="w-full text-sm">
+        <div class="flex-grow w-full h-full px-6">
+          <input type="text" placeholder="搜索医生、药品、医疗器材、体检套餐、资讯等" class="w-full h-full text-sm">
         </div>
         <button
           aria-label="Right Align" 
-          class="flex-shrink-0 ml-auto w-[5.63rem] h-full rounded-md bg-primary text-white hover:opacity-80 active:opacity-100"
+          class="flex-shrink-0 ml-auto w-[5.63rem] h-full rounded-md bg-primary text-white hover:opacity-90 active:opacity-100"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

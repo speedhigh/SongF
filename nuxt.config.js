@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'SongF',
+    title: '光大健康在线',
     htmlAttrs: {
       lang: 'en'
     },

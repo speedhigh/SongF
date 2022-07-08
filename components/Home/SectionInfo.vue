@@ -8,7 +8,7 @@
     <!-- 2`list -->
     <div 
       v-for="i in 3" :key="i"
-      class="mt-[30px] flex space-x-[30px] cursor-pointer hover:opacity-75"
+      class="mt-[30px] flex space-x-[30px] cursor-pointer hover:(transition transform scale-105 shadow-lg pr-4 rounded-md)"
     >
       <img src="https://api.lorem.space/image/album?w=280&h=150" alt="info" width="280" height="150" class="flex-shrink-0 rounded-md">
       <div class="flex-grow w-full">

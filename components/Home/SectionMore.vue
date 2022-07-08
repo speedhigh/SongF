@@ -6,7 +6,7 @@
     <div class="mt-[30px] grid grid-cols-5 gap-x-10 gap-y-[1.88rem]">
       <div
         v-for="i in 10" :key="i"
-        class="w-full h-[370px] rounded-md shadow-md border border-gray-50 cursor-pointer hover:opacity-80"
+        class="w-full h-[370px] rounded-md shadow-md cursor-pointer hover:(transition transform scale-105 shadow-xl)"
       >
         <img src="https://api.lorem.space/image/furniture?w=248&h=248" alt="product" width="248" height="248" class="rounded-t-md">
         <div class="py-4 px-5">

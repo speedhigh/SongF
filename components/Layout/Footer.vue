@@ -92,45 +92,45 @@ export default {
         {
           title: '活动专区', 
           list: [
-            { title: '光大银行活动专区', href: '/' },
-            { title: '中青旅活动专区', href: '/' },
-            { title: '老年大学专区', href: '/' },
+            { title: '光大银行活动专区', path: '/' },
+            { title: '中青旅活动专区', path: '/' },
+            { title: '老年大学专区', path: '/' },
           ]
         },
         {
           title: '在线医生', 
           list: [
-            { title: '国内健康咨询', href: '/' },
-            { title: '日本健康咨询', href: '/' }
+            { title: '国内健康咨询', path: '/' },
+            { title: '日本健康咨询', path: '/' }
           ]
         },
         {
           title: '在线商城', 
           list: [
-            { title: '药品商城', href: '/' },
-            { title: '赴日体检', href: '/' },
-            { title: '医疗器械', href: '/' },
-            { title: '老年介护', href: '/' },
+            { title: '药品商城', path: '/' },
+            { title: '赴日体检', path: '/' },
+            { title: '医疗器械', path: '/' },
+            { title: '老年介护', path: '/' },
           ]
         },
         {
           title: '最新资讯', 
           list: [
-            { title: '诊疗技术', href: '/' },
-            { title: '药品信息', href: '/' },
-            { title: '医疗器械', href: '/' }
+            { title: '诊疗技术', path: '/' },
+            { title: '药品信息', path: '/' },
+            { title: '医疗器械', path: '/' }
           ]
         },
         {
           title: '签证办理', 
           list: [
-            { title: '签证办理', href: '/' }
+            { title: '签证办理', path: '/' }
           ]
         },
         {
           title: '身元保证', 
           list: [
-            { title: '身元保证', href: '/' }
+            { title: '身元保证', path: '/' }
           ]
         },
       ]

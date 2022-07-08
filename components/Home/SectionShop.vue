@@ -7,16 +7,16 @@
     </div>
     <!-- 2menu -->
     <div class="mt-[30px] flex space-x-6">
-      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:opacity-80">
+      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:(shadow-lg shadow-red-300/40 transition transform scale-105)">
         <img src="~/assets/images/home/shop-a.webp" alt="" width="332" height="380" class="rounded-md">
       </div>
-      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:opacity-80">
+      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:(shadow-lg shadow-green-300/40 transition transform scale-105)">
         <img src="~/assets/images/home/shop-b.webp" alt="" width="332" height="380" class="rounded-md">
       </div>
-      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:opacity-80">
+      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:(shadow-lg shadow-orange-300/40 transition transform scale-105)">
         <img src="~/assets/images/home/shop-c.webp" alt="" width="332" height="380" class="rounded-md">
       </div>
-      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:opacity-80">
+      <div class="w-full h-[380px] rounded-md shadow-md cursor-pointer hover:(shadow-lg shadow-blue-300/40 transition transform scale-105)">
         <img src="~/assets/images/home/shop-d.webp" alt="" width="332" height="380" class="rounded-md">
       </div>
     </div>
