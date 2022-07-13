@@ -30,7 +30,7 @@
       </button>
       <button 
         class="w-[3.75rem] h-[1.88rem] text-primary border border-primary rounded-md hover:opacity-80 active:opacity-100"
-        @click="$nuxt.$router.push('/login')"
+        @click="$nuxt.$router.push('/login/regisiter')"
       >
         注册
       </button>

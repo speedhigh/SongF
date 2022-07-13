@@ -15,7 +15,7 @@
       v-for="i in 3" :key="i"
       class="mt-[30px] flex space-x-[30px] cursor-pointer hover:(transition transform scale-105) active:opacity-70"
     >
-      <img src="https://api.lorem.space/image/album?w=280&h=150" alt="info" width="280" height="150" class="flex-shrink-0 rounded-md">
+      <img src="https://api.lorem.space/image/fashion?w=280&h=150" alt="info" width="280" height="150" class="flex-shrink-0 rounded-md">
       <div class="flex-grow w-full">
         <h3 class="line-1 text-[1.38rem]">吃过多热性食材易夏季感冒！中医教您分对感冒对症下药</h3>
         <div class="mt-5 h-6 px-2.5 bg-primary text-white text-xs rounded text-center leading-6 inline-block">诊疗技术</div>

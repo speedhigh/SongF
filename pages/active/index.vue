@@ -37,7 +37,7 @@
         v-for="i in 5" :key="i" 
         class="w-full h-[300px] rounded-md relative shadow-lg cursor-pointer hover:(transition transform scale-105 shadow-xl)"
       >
-        <img src="https://api.lorem.space/image/furniture?w=448&h=300" alt="img" width="100%" height="300" class="rounded-md">
+        <img src="https://api.lorem.space/image/house?w=448&h=300" alt="img" width="100%" height="300" class="rounded-md">
         <div class="absolute bottom-0 inset-x-0 w-full bg-[rgba(255,255,255,0.9)] h-[60px] rounded-b-md flex items-center px-5 space-x-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />

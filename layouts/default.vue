@@ -1,9 +1,8 @@
 <template>
   <div 
     class="w-full bg-white min-h-screen relative pt-[3.75rem] text-gray-900 cursor-default leading-none"
-    :class="$nuxt.$route.path === '/login' ? 'pb-44' : 'pb-[27.75rem]'"
+    :class="blackList.includes($nuxt.$route.path) ? 'pb-44' : 'pb-[27.75rem]'"
   >
-
     <!-- HEADER -->
     <LayoutHeader />
 
@@ -17,7 +16,11 @@
 
 <script>
 export default {
-  
+  data() {
+    return {
+      blackList: ['/login', '/login/regisiter']
+    }
+  }
 }
 </script>
 
@@ -26,7 +29,7 @@ export default {
 * { @apply m-0 p-0 }
 html { overflow-y: overlay }
 
-::-webkit-scrollbar { @apply w-2}
+::-webkit-scrollbar { @apply w-2 }
 ::-webkit-scrollbar-thumb { @apply bg-gray-300 w-2 rounded-lg }
 
 /* 全局样式 */

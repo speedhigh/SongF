@@ -15,7 +15,7 @@
             >
           </div>
           <button
-            aria-label="Right Align" 
+            aria-label="Right Align"
             class="flex-shrink-0 ml-auto w-[5.63rem] h-full rounded-md bg-white text-[#2CB7D5] hover:opacity-90 active:opacity-100"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -40,7 +40,7 @@
             <button 
               v-for="(item, index) in type" 
               :key="index" 
-              class="h-6 mr-5 my-1 hover:text-primary" 
+              class="h-6 mr-1 my-1 px-2 hover:text-primary" 
               :class="{'bg-orange-100 text-primary px-2 rounded-md': typeActive === index}"
               @click="typeActive = index"
             >
@@ -53,7 +53,7 @@
             <button 
               v-for="(item, index) in date" 
               :key="index" 
-              class="h-6 mr-5 mb-1 hover:text-primary" 
+              class="h-6 mr-1 my-1 px-2 hover:text-primary" 
               :class="{'bg-orange-100 text-primary px-2 rounded-md': dateActive === index}"
               @click="dateActive = index"
             >

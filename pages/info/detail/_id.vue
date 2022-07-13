@@ -9,7 +9,7 @@
       </div>
       <div class="ml-auto w-[340px] z-10 relative pt-10">
         <div class="sticky top-24 space-y-[30px]">
-          <div class="shadow rounded-lg h-[294px]">
+          <div class="shadow-md rounded-lg h-[294px]">
             <div class="w-full h-[54px] flex items-center px-5 rounded-t-lg bg-gray-100">
               <h2 class="text-lg font-normal">诊疗技术</h2>
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-auto h-6 w-6 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
@@ -22,7 +22,7 @@
               </div>
             </div>
           </div>
-          <div class="shadow rounded-lg h-[294px]">
+          <div class="shadow-md rounded-lg h-[294px]">
             <div class="w-full h-[54px] flex items-center px-5 rounded-t-lg bg-gray-100">
               <h2 class="text-lg font-normal">诊疗技术</h2>
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-auto h-6 w-6 text-gray-400" viewBox="0 0 20 20" fill="currentColor">

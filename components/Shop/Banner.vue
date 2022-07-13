@@ -13,7 +13,7 @@
           >
         </div>
         <button
-          aria-label="Right Align" 
+          aria-label="Right Align"
           class="flex-shrink-0 ml-auto w-[5.63rem] h-full rounded-md bg-white text-[#EEA53C] hover:opacity-90 active:opacity-100"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

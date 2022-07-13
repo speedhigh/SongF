@@ -7,7 +7,15 @@
     <div class="ml-auto w-[400px] h-[460px] bg-[rgba(255,255,255,0.9)] rounded-xl pt-10 pb-11">
       <div class="flex items-end px-[30px]">
         <p class="text-[2rem] font-bold">欢迎登录</p>
-        <p class="ml-auto text-gray-400">没有账号？<span class="text-primary cursor-pointer">去注册</span></p>
+        <p class="ml-auto text-gray-400">
+          没有账号？
+          <span 
+            class="text-primary cursor-pointer"
+            @click="$nuxt.$router.push('/login/regisiter')"
+          >
+            去注册
+          </span>
+        </p>
       </div>
       <!-- 表单 -->
       <el-form
@@ -27,10 +35,10 @@
         </el-form-item>
       </el-form>
       <div class="mt-20 px-[30px]">
-        <button class="w-full h-11 bg-primary text-white rounded-3xl hover:opacity-85">注册</button>
+        <button class="w-full h-11 bg-primary text-white rounded-3xl hover:opacity-85">登录</button>
         <div class="mt-4 flex justify-between text-sm text-gray-500">
           <div class="cursor-pointer hover:text-gray-900" @click="changeActive(active)">{{ active }}</div>
-          <div class="cursor-pointer hover:text-gray-900">忘记密码</div>
+          <div class="cursor-pointer hover:text-gray-900" @click="$nuxt.$router.push('/login/forget')">忘记密码</div>
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 <template>
   <footer
     class="absolute bottom-0 inset-x-0 w-full bg-gray-100"
-    :class="$nuxt.$route.path === '/login' ? 'h-[178px]' : 'h-[27.75rem]'"
+    :class="blackList.includes($nuxt.$route.path) ? 'h-[178px]' : 'h-[27.75rem]'"
   >
     <!-- menu -->
     <div
-      v-if="$nuxt.$route.path !== '/login'"
+      v-if="!blackList.includes($nuxt.$route.path)"
       class="py-9 w-[75rem] h-[14.75rem] mx-auto border-b border-gray-300 flex space-x-[3.75rem]"
     >
       <div class="flex-shrink-0 w-[214px] space-y-6">
@@ -34,7 +34,7 @@
     <!-- 四大保证 -->
     <div 
       class="w-[75rem] h-[6.5rem] mx-auto flex items-center justify-between"
-      :class="{'mt-[1.81rem]': $nuxt.$route.path !== '/login'}"
+      :class="{'mt-[1.81rem]': !blackList.includes($nuxt.$route.path)}"
     >
       <!-- 官方直营 -->
       <div class="flex items-center space-x-7">
@@ -88,6 +88,7 @@
 export default {
   data() {
     return {
+      blackList: ['/login', '/login/regisiter'],
       footerMenu: [
         {
           title: '活动专区', 

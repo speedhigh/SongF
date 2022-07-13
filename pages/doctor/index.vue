@@ -40,7 +40,7 @@
             <button 
               v-for="(item, index) in ke" 
               :key="index" 
-              class="h-6 mr-5 my-1 hover:text-primary" 
+              class="h-6 mr-1 my-1 px-2 hover:text-primary" 
               :class="{'bg-orange-100 text-primary px-2 rounded-md': keActive === index}"
               @click="keActive = index"
             >
@@ -53,7 +53,7 @@
             <button 
               v-for="(item, index) in bing" 
               :key="index" 
-              class="h-6 mr-5 mb-1 hover:text-primary" 
+              class="h-6 mr-1 my-1 px-2 hover:text-primary" 
               :class="{'bg-orange-100 text-primary px-2 rounded-md': bingActive === index}"
               @click="bingActive = index"
             >
