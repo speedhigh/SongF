@@ -4,6 +4,8 @@ import {
   Select, 
   Option, 
   Button,
+  Collapse,
+  CollapseItem,
   Form, 
   FormItem, 
   Input, 
@@ -14,6 +16,10 @@ import {
   Checkbox,
   Divider,
   Upload,
+  Tabs,
+  TabPane,
+  Steps,
+  Step,
   Dialog,
   DatePicker,
   MessageBox,
@@ -23,6 +29,8 @@ import {
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Button)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
@@ -33,6 +41,10 @@ Vue.use(CarouselItem)
 Vue.use(Checkbox)
 Vue.use(Divider)
 Vue.use(Upload)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
 Vue.use(Dialog)
 Vue.use(DatePicker)
 

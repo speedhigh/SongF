@@ -11,6 +11,9 @@ export default defineConfig({
       colors: {
         primary: '#FF432A'
       },
+      backgroundImage: {
+        'login-bg': "url('../SongF/assets/images/login/login-bg.webp')",
+      }
     },
   },
   plugins: [

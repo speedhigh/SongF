@@ -5,7 +5,7 @@
       <div
         v-for="item in kingkongList"
         :key="item.id"
-        class="w-[11.5rem] h-[3.75rem] flex items-center justify-center space-x-2.5 cursor-pointer hover:(transition transform scale-105)"
+        class="w-[11.5rem] h-[3.75rem] flex items-center justify-center space-x-2.5 cursor-pointer hover:(transition transform scale-105) active:opacity-70"
         @click="$nuxt.$router.push(item.path)"
       >
         <img :src="item.img" :alt="item.title" width="48" height="48"  class="w-12 h-12 flex-shrink-0">
@@ -16,7 +16,10 @@
       </div>
     </div>
     <!-- 活动专区banner -->
-    <div class="ml-auto w-80 h-full flex-shrink-0 rounded-md cursor-pointer hover:opacity-90">
+    <div 
+      class="ml-auto w-80 h-full flex-shrink-0 rounded-md cursor-pointer hover:(transition transform scale-105) active:opacity-70"
+      @click="$nuxt.$router.push('/active')"
+    >
       <img src="~/assets/images/home/banner-active.webp" alt="banner" width="320" height="140" class="w-80 h-full">
     </div>
   </div>

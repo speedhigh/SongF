@@ -25,14 +25,14 @@
         </div>
         <div class="mt-5 w-[45rem] mx-auto flex items-center">
           <p>热门搜索：</p>
-          <p v-for="item in hotList" :key="item.id" class="ml-2 cursor-pointer hover:underline">{{ item.title }}</p>
+          <p v-for="item in hotSearchList" :key="item.id" class="ml-2 cursor-pointer hover:underline">{{ item.title }}</p>
         </div>
       </div>
     </div>
     <!-- 面包屑 -->
     <BaseBreadcrumb :list="breadcrumbList" />
     <!-- content -->
-    <div class="w-[1400px] mx-auto w-full py-10 grid grid-cols-3 gap-x-7 gap-y-[1.88rem]">
+    <div class="w-[1400px] mx-auto py-10 grid grid-cols-3 gap-x-7 gap-y-[1.88rem]">
       <div 
         v-for="i in 5" :key="i" 
         class="w-full h-[300px] rounded-md relative shadow-lg cursor-pointer hover:(transition transform scale-105 shadow-xl)"
@@ -57,7 +57,7 @@ export default {
         { title: '首页', path: '/' },
         { title: '活动专区', path: '' },
       ],
-      hotList: [
+      hotSearchList: [
         { id: '1', title: '光大银行活动' },
         { id: '2', title: '老年大学专区' },
         { id: '3', title: '中青旅' },
@@ -66,7 +66,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

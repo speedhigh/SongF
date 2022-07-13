@@ -37,4 +37,5 @@ h3 { @apply text-base }
 p { @apply text-sm }
 .line-1 { @apply break-words line-clamp-1 }
 .line-2 { @apply break-words line-clamp-2 }
+.line-3 { @apply break-words line-clamp-3 }
 </style>

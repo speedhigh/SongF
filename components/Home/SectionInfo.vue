@@ -3,12 +3,17 @@
     <!-- 1`title -->
     <div class="flex items-end">
       <h2>最新资讯</h2>
-      <p class="ml-auto cursor-pointer text-gray-500 hover:(text-gray-900 transform scale-105)">查看更多>></p>
+      <p 
+        class="ml-auto cursor-pointer text-gray-500 hover:(text-gray-900 transition transform scale-105) active:opacity-70"
+        @click="$nuxt.$router.push('/info')"
+      >
+        查看更多>>
+      </p>
     </div>
     <!-- 2`list -->
     <div 
       v-for="i in 3" :key="i"
-      class="mt-[30px] flex space-x-[30px] cursor-pointer hover:(transition transform scale-105 shadow-lg pr-4 rounded-md)"
+      class="mt-[30px] flex space-x-[30px] cursor-pointer hover:(transition transform scale-105) active:opacity-70"
     >
       <img src="https://api.lorem.space/image/album?w=280&h=150" alt="info" width="280" height="150" class="flex-shrink-0 rounded-md">
       <div class="flex-grow w-full">
